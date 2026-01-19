@@ -2,6 +2,8 @@
 
 A Resident Evil-themed, lightweight desktop water intake reminder and tracker built with Tauri + React.
 
+**[📦 Download Latest Release](https://github.com/AlbadiFTW/hydra-tracker/releases/latest)** | **[🐛 Report Issue](https://github.com/AlbadiFTW/hydra-tracker/issues)** | **[💻 View Source](https://github.com/AlbadiFTW/hydra-tracker)**
+
 ![Hydra Tracker](https://img.shields.io/badge/RAM-~15MB-green) ![Tauri](https://img.shields.io/badge/Tauri-2.0-blue) ![Platform](https://img.shields.io/badge/Platform-Windows%20|%20macOS%20|%20Linux-lightgrey)
 
 ## Features
@@ -80,9 +82,20 @@ sudo apt install libwebkit2gtk-4.1-dev \
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-## Installation
+## Quick Install
+
+**📥 For End Users:**
+1. Download the latest installer from [Releases](https://github.com/AlbadiFTW/hydra-tracker/releases/latest)
+2. Run the installer (`.exe` for Windows)
+3. Launch Hydra Tracker from your Start Menu
+
+**🔧 For Developers:**
+
+## Building from Source
 
 1. **Clone and install dependencies**
+   ```bash
+   git clone https://github.com/AlbadiFTW/hydra-tracker.git
    ```bash
    cd hydra-tracker
    npm install
@@ -152,7 +165,7 @@ All data is stored locally:
 ## Customization
 
 ### Changing Default Goal
-Edit `src-tauri/src/lib.rs`:
+Edit `src-tauri/src/main.rs`:
 ```rust
 impl Default for Settings {
     fn default() -> Self {
@@ -203,4 +216,4 @@ MIT License - feel free to use, modify, and distribute!
 
 ---
 
-Made with 💧 by Abdulrahman | Stay hydrated!
+Made with 💧 by Albaddie | Stay hydrated!
